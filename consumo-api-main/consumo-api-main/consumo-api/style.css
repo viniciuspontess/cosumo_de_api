@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    padding:0px;
+    margin:0px;
+  }
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 100px;
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+}
+
+#breed-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    min-width: 200px;
+}
+
+#search-btn {
+    background-color: #fc791e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#search-btn:hover {
+    background-color: #e46a17;
+}
+
+#random-btn {
+    background-color: #fc791e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#random-btn:hover {
+    background-color: #e46a17;
+}
+
+.cat-card {
+    display: none; 
+    margin-top: 20px;
+}
+
+.cat-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#cat-breed {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#cat-description {
+    font-size: 16px;
+    color: #555;
+}
+
+
+@media (min-width: 600px) {
+    .search-container {
+        flex-wrap: nowrap;
+    }
+
+    #breed-input {
+        flex: 2;
+    }
+
+    #search-btn {
+        flex: 1;
+    }
+
+    #random-btn {
+        width: auto;
+    }
+}
+
